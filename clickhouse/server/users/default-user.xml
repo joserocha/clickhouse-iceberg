@@ -1,0 +1,23 @@
+<clickhouse>
+    <users>
+        <default>
+            <networks>
+                <ip>::/0</ip>
+                <ip>0.0.0.0/0</ip>
+                <ip>127.0.0.1</ip>
+                <ip>::1</ip>
+                <host>localhost</host>
+            </networks>
+            <profile>default</profile>
+            <quota>default</quota>
+            <password></password>
+            <access_management>1</access_management>
+        </default>
+    </users>
+  
+    <profiles>
+        <default>
+            <allow_experimental_database_iceberg>1</allow_experimental_database_iceberg>
+        </default>
+    </profiles>
+</clickhouse>
