@@ -55,8 +55,8 @@ def create_catalog_connection(catalog_url, warehouse):
         
         # Add specific properties for S3 access
         props = {
-            "uri": catalog_url,
-            "warehouse": warehouse,
+            "uri": "http://iceberg:8181",
+            "warehouse": "mybucket",
             "s3.endpoint": "http://minio:9000",
             "s3.path-style-access": "true",
             "s3.access-key-id": "root",
